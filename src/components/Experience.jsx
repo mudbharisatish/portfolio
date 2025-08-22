@@ -10,18 +10,19 @@ const Experience = () => {
   const experienceData = [
     {
       id: 1,
-      position: 'Senior Frontend Developer',
-      company: 'TechCorp Solutions',
-      location: 'San Francisco, CA',
-      duration: '2023 - Present',
+      position: 'Senior Front-End Developer',
+      company: 'Techart Trekkies',
+      location: 'Kathmandu, Nepal',
+      duration: 'Nov 2022 - Aug 2023',
       type: 'Full-time',
       description: 'Leading frontend development for enterprise web applications serving 100k+ users. Architecting scalable React applications and mentoring junior developers.',
       responsibilities: [
-        'Lead a team of 5 frontend developers',
-        'Architect and implement complex React applications',
-        'Optimize application performance resulting in 40% faster load times',
-        'Collaborate with UX/UI designers and backend teams',
-        'Conduct code reviews and establish best practices'
+        'Delivered 10+ production-grade responsive SPAs and Shopify storefronts boosted user engagement by 25% and reduced bounce rates by 15%.',
+        'Customized Shopify Liquid templates and integrated Storefront & Admin APIs for advanced eCommerce features.',
+        'Optimized component rendering via lazy loading, code splitting, andmemoization (useMemo, React.memo)',
+        'Implemented modular architecture using Atomic Design principles, improving reusability and maintainability.',
+        'Contributed to CI/CD pipelines using GitLab CI and GitHub Actions, supporting automated builds, linting, and deployments.',
+        'Collaborated cross-functionally to define front-end scope in agile sprints, conducted PR reviews, and enforced coding standards.'
       ],
       technologies: ['React', 'TypeScript', 'Redux', 'Material UI', 'Jest', 'AWS'],
       achievements: [
@@ -33,17 +34,17 @@ const Experience = () => {
     {
       id: 2,
       position: 'Frontend Developer',
-      company: 'StartupXYZ',
-      location: 'San Francisco, CA',
-      duration: '2022 - 2023',
+      company: 'Mavorion System',
+      location: 'Kathmandu, Nepal',
+      duration: 'May 2022 - Nov 2022',
       type: 'Full-time',
       description: 'Developed responsive web applications for a fast-growing fintech startup. Built user interfaces for mobile and web platforms.',
       responsibilities: [
-        'Developed responsive web applications using React and Vue.js',
-        'Implemented RESTful API integrations',
-        'Created reusable component libraries',
-        'Collaborated in agile development environment',
-        'Participated in product planning and feature discussions'
+        'Developed responsive UIs for delivery and restaurant platforms serving 10K+ active users.',
+        'Applied Redux-Saga for complex async flows and ensured consistent state hydration.',
+        'Integrated RESTful APIs and enhanced user experience by implementing skeleton loaders, accessibility standards, and error boundaries.',
+        'Worked closely with QA and product teams to resolve functional and UI bugsacross device matrices.'
+     
       ],
       technologies: ['React', 'Vue.js', 'JavaScript', 'Tailwind CSS', 'Node.js', 'MongoDB'],
       achievements: [
@@ -54,18 +55,18 @@ const Experience = () => {
     },
     {
       id: 3,
-      position: 'Junior Web Developer',
-      company: 'Digital Agency Pro',
-      location: 'San Francisco, CA',
-      duration: '2021 - 2022',
+      position: 'Junior  Developer',
+      company: 'Info Developers',
+      location: 'Kathmandu, Nepal',
+      duration: 'April 2021 - May 2022',
       type: 'Full-time',
       description: 'Developed websites and web applications for various clients. Gained experience in multiple technologies and project management.',
       responsibilities: [
-        'Built custom websites for small to medium businesses',
-        'Maintained and updated existing client websites',
-        'Collaborated with designers to implement pixel-perfect designs',
-        'Optimized websites for SEO and performance',
-        'Provided technical support to clients'
+        'Developed a Vehicle Management System using React + TypeScript, implementing modular components and clean state management via React Query.',
+        'Integrated third-party APIs (Google Maps, SMS, Payment) and ensured performance KPIs through real-time monitoring.',
+        'Led team stand-ups and mentored junior interns on Git workflows and reusable UI design patterns.',
+        // 'Optimized websites for SEO and performance',
+        // 'Provided technical support to clients'
       ],
       technologies: ['HTML', 'CSS', 'JavaScript', 'WordPress', 'PHP', 'MySQL'],
       achievements: [
@@ -74,28 +75,7 @@ const Experience = () => {
         'Reduced website loading times by average of 30%'
       ]
     },
-    {
-      id: 4,
-      position: 'Web Development Intern',
-      company: 'Innovation Labs',
-      location: 'San Francisco, CA',
-      duration: '2021 (Summer)',
-      type: 'Internship',
-      description: 'Summer internship focused on learning modern web development practices and contributing to real-world projects.',
-      responsibilities: [
-        'Assisted senior developers with React application development',
-        'Created documentation for existing codebases',
-        'Participated in daily standups and sprint planning',
-        'Fixed bugs and implemented minor features',
-        'Learned version control with Git and collaborative development'
-      ],
-      technologies: ['React', 'JavaScript', 'HTML', 'CSS', 'Git', 'Figma'],
-      achievements: [
-        'Completed 3 major feature implementations',
-        'Received excellent performance review',
-        'Offered full-time position upon graduation'
-      ]
-    }
+    
   ];
 
   return (
@@ -127,7 +107,7 @@ const Experience = () => {
               darkMode ? 'text-gray-300' : 'text-gray-600'
             }`}
           >
-            My professional journey and career growth
+            Professional journey and career growth
           </Typography>
         </motion.div>
 

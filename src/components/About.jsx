@@ -82,10 +82,15 @@ const About = () => {
                       darkMode ? 'text-gray-300' : 'text-gray-600'
                     }`}
                   >
-                    I'm a passionate frontend developer with a love for creating beautiful, 
-                    functional, and user-friendly web applications. With expertise in modern 
-                    web technologies like React, JavaScript, and CSS frameworks, I enjoy 
-                    turning complex problems into simple, beautiful designs.
+                   Results-driven Front-End Engineer with 3+ years of experience delivering scalable,
+performant, and accessible web applications across eCommerce, logistics, and
+enterprise systems. Specialized in JavaScript (ES6+), React ecosystem, Shopify, and
+modern tooling. Strong knowledge of component architecture, state management,
+CI/CD workflows, and cross-browser compatibility. Demonstrated ability to
+transform complex UI/UX designs into maintainable and modular front-end
+codebases using TypeScript, Tailwind, and Next.js. Recently completed MSc in Cyber
+Security with added expertise in secure development practices and DevSecOps
+awareness.
                   </Typography>
                   <Typography
                     variant="body1"
@@ -93,8 +98,8 @@ const About = () => {
                       darkMode ? 'text-gray-300' : 'text-gray-600'
                     }`}
                   >
-                    When I'm not coding, you can find me exploring new technologies, 
-                    contributing to open-source projects, or enjoying a good cup of coffee 
+                    I am always looking for new opportunities to learn and grow.
+                    When I'm not coding, you can find me exploring new technologies, or enjoying a good cup of coffee 
                     while planning my next project.
                   </Typography>
                 </CardContent>

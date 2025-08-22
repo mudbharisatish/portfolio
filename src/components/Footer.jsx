@@ -11,7 +11,7 @@ const Footer = () => {
     { icon: <GitHub />, url: 'https://github.com', label: 'GitHub' },
     { icon: <LinkedIn />, url: 'https://linkedin.com', label: 'LinkedIn' },
     { icon: <Twitter />, url: 'https://twitter.com', label: 'Twitter' },
-    { icon: <Email />, url: 'mailto:contact@example.com', label: 'Email' },
+    { icon: <Email />, url: 'mailto:satish@gmail.com', label: 'Email' },
   ];
 
   return (
@@ -90,7 +90,7 @@ const Footer = () => {
               variant="body2"
               className={darkMode ? 'text-gray-400' : 'text-gray-500'}
             >
-              © {new Date().getFullYear()} Portfolio. Built with React, JavaScript, and ❤️
+              © {new Date().getFullYear()} satish
             </Typography>
           </motion.div>
         </div>

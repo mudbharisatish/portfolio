@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Typography, Button } from '@mui/material';
-import { ArrowDownward } from '@mui/icons-material';
+import { ArrowDownward, Height } from '@mui/icons-material';
 import { useTheme } from './ThemeContext';
 import { motion } from 'framer-motion';
+import LaptopMacIcon from '@mui/icons-material/LaptopMac';
+import { Icon } from "@iconify/react";
 
 const Hero = () => {
   const { darkMode } = useTheme();
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = 'Hi, I am a Developer';
+  const fullText = 'Satish Mudbhari';
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -29,6 +31,7 @@ const Hero = () => {
       darkMode ? 'bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900' : 
       'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50'
     }`}>
+      
       <Container maxWidth="lg">
         <div className="text-center">
           <motion.div
@@ -43,6 +46,8 @@ const Hero = () => {
               }`}
               style={{ minHeight: '120px' }}
             >
+              <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
+            <br/>
               {displayText}
               <span className={`animate-pulse ${darkMode ? 'text-purple-400' : 'text-purple-600'}`}>|</span>
             </Typography>

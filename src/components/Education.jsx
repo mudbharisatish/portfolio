@@ -9,12 +9,26 @@ const Education = () => {
 
   const educationData = [
     {
-      id: 1,
-      degree: 'Bachelor of Science in Computer Science',
-      institution: 'University of Technology',
-      location: 'San Francisco, CA',
-      duration: '2018 - 2022',
-      gpa: '3.8/4.0',
+      id:1,
+      degree: 'Master of Science in Cyber Security',
+      institution: 'University of West London',
+      location: 'South Ealing, London',
+      duration: '2023 - 2025',
+      description: 'Intensive 6-month program covering modern web development technologies including React, Node.js, MongoDB, and cloud deployment.',
+      achievements: [
+        'Top 5% of graduating class',
+        'Built 10+ full-stack applications',
+        'Mentored junior students'
+      ],
+      courses: ['Network and System Security','Security Operations and Assurance','Machine Learning','Big Data Analytics', 'Fundamental of Cyber Security']
+    },
+    {
+      id: 2,
+      degree: 'Bachelor of Technology in Computer Science and Engineering',
+      institution: 'Dr. A.P.J. Abdul Kalam Technical University',
+      location: 'India',
+      duration: '2016 - 2020',
+      gpa: '3.0/4.0',
       description: 'Focused on software engineering, web development, and computer systems. Completed coursework in algorithms, data structures, database systems, and software architecture.',
       achievements: [
         'Dean\'s List for 6 semesters',
@@ -23,35 +37,8 @@ const Education = () => {
       ],
       courses: ['Data Structures', 'Algorithms', 'Web Development', 'Database Systems', 'Software Engineering']
     },
-    {
-      id: 2,
-      degree: 'Full Stack Web Development Bootcamp',
-      institution: 'Tech Academy',
-      location: 'Online',
-      duration: '2022',
-      description: 'Intensive 6-month program covering modern web development technologies including React, Node.js, MongoDB, and cloud deployment.',
-      achievements: [
-        'Top 5% of graduating class',
-        'Built 10+ full-stack applications',
-        'Mentored junior students'
-      ],
-      courses: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'AWS Deployment']
-    },
-    {
-      id: 3,
-      degree: 'High School Diploma',
-      institution: 'Central High School',
-      location: 'San Francisco, CA',
-      duration: '2014 - 2018',
-      gpa: '3.9/4.0',
-      description: 'Graduated with honors, focusing on mathematics and computer science courses.',
-      achievements: [
-        'Valedictorian',
-        'National Honor Society',
-        'Computer Science Club President'
-      ],
-      courses: ['AP Computer Science', 'AP Calculus', 'AP Physics', 'Advanced Mathematics']
-    }
+    
+    
   ];
 
   return (
@@ -83,7 +70,7 @@ const Education = () => {
               darkMode ? 'text-gray-300' : 'text-gray-600'
             }`}
           >
-            My academic journey and continuous learning
+            Academic Journey
           </Typography>
         </motion.div>
 
@@ -168,16 +155,16 @@ const Education = () => {
                         </div>
                       </div>
                       
-                      <Typography
+                      {/* <Typography
                         variant="body1"
                         className={`mb-4 leading-relaxed ${
                           darkMode ? 'text-gray-300' : 'text-gray-600'
                         }`}
                       >
                         {edu.description}
-                      </Typography>
+                      </Typography> */}
 
-                      {edu.achievements && (
+                      {/* {edu.achievements && (
                         <div className="mb-4">
                           <Typography
                             variant="h6"
@@ -195,7 +182,7 @@ const Education = () => {
                             ))}
                           </ul>
                         </div>
-                      )}
+                      )} */}
                     </div>
 
                     <div className="col-lg-4">

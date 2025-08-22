@@ -38,19 +38,19 @@ const Contact = () => {
     {
       icon: <Email sx={{ fontSize: 30 }} />,
       title: 'Email',
-      content: 'contact@example.com',
-      link: 'mailto:contact@example.com'
+      content: 'satishm1525@gmail.com',
+      link: 'mailto:satishm1525@gmail.com'
     },
     {
       icon: <Phone sx={{ fontSize: 30 }} />,
       title: 'Phone',
-      content: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      content: '+447587401590',
+      link: 'tel:+447587401590'
     },
     {
       icon: <LocationOn sx={{ fontSize: 30 }} />,
       title: 'Location',
-      content: 'San Francisco, CA',
+      content: 'London, United Kingdom',
       link: '#'
     },
   ];

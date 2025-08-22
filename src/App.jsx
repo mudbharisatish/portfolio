@@ -54,7 +54,7 @@ const AppContent = () => {
           <Skills />
           <Education />
           <Experience />
-          <Projects />
+          {/* <Projects /> */}
           <Contact />
         </main>
         <Footer />
