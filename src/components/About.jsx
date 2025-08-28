@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Typography, Card, CardContent, Avatar } from '@mui/material';
 import { useTheme } from './ThemeContext';
 import { motion } from 'framer-motion';
+import abooutme from '../assets/images/aboutme.jpeg'
 
 const About = () => {
   const { darkMode } = useTheme();
@@ -48,7 +49,9 @@ const About = () => {
                   background: 'linear-gradient(45deg, #6366f1, #8b5cf6)',
                 }}
               >
-                <Typography variant="h2">JD</Typography>
+                <Typography variant="h2">
+                <img src={abooutme} alt="Logo" width="500" height="500" />
+                </Typography>
               </Avatar>
             </motion.div>
           </div>

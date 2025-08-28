@@ -13,13 +13,12 @@ const Skills = () => {
     { name: 'HTML/CSS', level: 88 },
     { name: 'Node.js', level: 80 },
     { name: 'Python', level: 75 },
-    { name: 'MongoDB', level: 70 },
+    { name: 'React-Native', level: 90 },
   ];
 
   const technologies = [
-    'React', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS',
-    'Material UI', 'Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'Git',
-    'Docker', 'AWS', 'Firebase', 'Figma', 'Bootstrap'
+    'React', 'JavaScript','TypeScript','Next.js','Wordpress','Liquid (Shopify)', 'HTML5', 'CSS3','Redux','React Query','React Hook','React-Native','Bootstrap','SASS','Styled Component','ANT Design', 'Tailwind CSS',
+    'Material UI', 'Node.js', 'Git', 'Github','Docker','Webpack','Babel','Postman','Eslint','Prettier','Burp Suite', 'Nmap','OWASP Top 10','Linux','Windows','Macos','SIEM Tools','Azure-900'
   ];
 
   const features = [

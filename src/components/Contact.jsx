@@ -84,7 +84,7 @@ const Contact = () => {
               darkMode ? 'text-gray-300' : 'text-gray-600'
             }`}
           >
-            Let's discuss your next project or just say hello!
+            Let's connect or discuss new technologies!
           </Typography>
         </motion.div>
 
@@ -191,7 +191,7 @@ const Contact = () => {
 
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                     <div className="row">
-                      <div className="col-md-6">
+                      <div className="col-md-6 mb-2">
                         <TextField
                           fullWidth
                           label="Your Name"
@@ -251,8 +251,10 @@ const Contact = () => {
                       </div>
                     </div>
 
+                    <div className="mb-2">
                     <TextField
                       fullWidth
+                     
                       label="Subject"
                       variant="outlined"
                       {...register('subject')}
@@ -278,7 +280,9 @@ const Contact = () => {
                         },
                       }}
                     />
+                    </div>
 
+                    <div className="mb-2">
                     <TextField
                       fullWidth
                       label="Your Message"
@@ -308,7 +312,7 @@ const Contact = () => {
                         },
                       }}
                     />
-
+                    </div>
                     <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                       <Button
                         type="submit"

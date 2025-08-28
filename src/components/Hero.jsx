@@ -62,7 +62,7 @@ const Hero = () => {
               variant="h4"
               className={`mb-8 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}
             >
-              Building amazing web experiences with modern technologies
+              Hi, I am recently graduate and a software engineer with over 3 years of experience, specializing in Frontend development.
             </Typography>
           </motion.div>
 

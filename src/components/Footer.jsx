@@ -8,9 +8,9 @@ const Footer = () => {
   const { darkMode } = useTheme();
 
   const socialLinks = [
-    { icon: <GitHub />, url: 'https://github.com', label: 'GitHub' },
-    { icon: <LinkedIn />, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <Twitter />, url: 'https://twitter.com', label: 'Twitter' },
+    { icon: <GitHub />, url: 'https://github.com/mudbharisatish', label: 'GitHub' },
+    { icon: <LinkedIn />, url: 'https://www.linkedin.com/in/satish-mudbhari-07a5b21b7/', label: 'LinkedIn' },
+    // { icon: <Twitter />, url: 'https://twitter.com', label: 'Twitter' },
     { icon: <Email />, url: 'mailto:satish@gmail.com', label: 'Email' },
   ];
 
