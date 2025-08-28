@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import emailjs from '@emailjs/browser';
 
 const schema = yup.object().shape({
   name: yup.string().required('Name is required').min(2, 'Name must be at least 2 characters'),
@@ -15,6 +16,9 @@ const schema = yup.object().shape({
 });
 
 const Contact = () => {
+  const serviceId='service_q01uljo';
+    const templateId='template_1d3vgu7';
+    const publicKey='Tl-PNLgLrg_cp3BcC';
   const { darkMode } = useTheme();
   const [showSuccess, setShowSuccess] = React.useState(false);
 
@@ -28,10 +32,15 @@ const Contact = () => {
   });
 
   const onSubmit = (data) => {
-    console.log('Form submitted:', data);
-    setShowSuccess(true);
-    reset();
-    setTimeout(() => setShowSuccess(false), 5000);
+    emailjs.send(serviceId,templateId,data,publicKey).then((response)=>{
+      console.log('Email Sent Successfully',response)
+      console.log('Form submitted:', data);
+      reset();
+      setShowSuccess(true);
+      setTimeout(() => setShowSuccess(false), 5000);
+    }).catch((error)=>{
+      console.log('Error sending emial:',error)
+    })
   };
 
   const contactInfo = [

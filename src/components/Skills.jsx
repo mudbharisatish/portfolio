@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, LinearProgress, Chip } from '@mui/material';
-import { Code, Palette, Speed, Smartphone } from '@mui/icons-material';
+import { Group,Autorenew,Psychology, Speed, Smartphone, SyncAlt, ChatBubble, AutoStories } from '@mui/icons-material';
 import { useTheme } from './ThemeContext';
 import { motion } from 'framer-motion';
 
@@ -8,12 +8,12 @@ const Skills = () => {
   const { darkMode } = useTheme();
 
   const skills = [
-    { name: 'React', level: 90 },
+    { name: 'React', level: 95 },
     { name: 'JavaScript', level: 95 },
-    { name: 'HTML/CSS', level: 88 },
-    { name: 'Node.js', level: 80 },
-    { name: 'Python', level: 75 },
-    { name: 'React-Native', level: 90 },
+    { name: 'HTML/CSS', level: 96 },
+    { name: 'Node.js', level: 88 },
+    { name: 'Python', level: 83 },
+    { name: 'React-Native', level: 93 },
   ];
 
   const technologies = [
@@ -23,25 +23,36 @@ const Skills = () => {
 
   const features = [
     {
-      icon: <Code sx={{ fontSize: 40 }} />,
-      title: 'Clean Code',
-      description: 'Writing maintainable, scalable, and efficient code'
+      icon: <Group sx={{ fontSize: 40 }} />,
+      title: 'Team Collaboration',
+      description: 'Strengthened team collaboration by facilitating clear communication, sharing knowledge, and supporting peers, resulting in faster delivery and higher quality outcomes'
     },
     {
-      icon: <Palette sx={{ fontSize: 40 }} />,
-      title: 'UI/UX Design',
-      description: 'Creating beautiful and intuitive user interfaces'
+      icon: <Autorenew sx={{ fontSize: 40 }} />,
+      title: 'Agile and Scrum',
+      description: 'Experienced in applying Agile principles to deliver high-quality software through iterative development, continuous feedback, and cross-functional collaboration.'
     },
     {
-      icon: <Speed sx={{ fontSize: 40 }} />,
-      title: 'Performance',
-      description: 'Optimizing applications for speed and efficiency'
+      icon: <Psychology sx={{ fontSize: 40 }} />,
+      title: 'Analytical Thinking',
+      description: 'Ability to break down complex problems, identify patterns, and develop efficient, logical solutions to drive effective decision-making.'
     },
     {
-      icon: <Smartphone sx={{ fontSize: 40 }} />,
-      title: 'Responsive',
-      description: 'Building mobile-first, responsive web applications'
+      icon: <SyncAlt sx={{ fontSize: 40 }} />,
+      title: 'Adaptability',
+      description: 'Demonstrated ability to adjust quickly to new technologies, environments, and challenges, ensuring consistent performance in dynamic settings.'
     },
+    {
+      icon: <ChatBubble sx={{ fontSize: 40 }} />,
+      title: 'Effective Communication',
+      description: 'Skilled in conveying complex technical concepts clearly and concisely to diverse audiences. Adept at active listening, collaborating with cross-functional teams, and presenting ideas effectively in meetings, reports, and presentations.'
+    },
+    {
+      icon: <AutoStories sx={{ fontSize: 40 }} />,
+      title: 'Continuous Learning',
+      description: 'Actively keeps up with emerging technologies and frameworks. Engages in online courses, hands-on projects, and workshops to enhance skills and deliver innovative solutions.'
+    },
+    
   ];
 
   return (
@@ -62,7 +73,7 @@ const Skills = () => {
               darkMode ? 'text-white' : 'text-gray-800'
             }`}
           >
-            Skills & Technologies
+            Soft Skills
           </Typography>
           <div className={`w-24 h-1 ${
             darkMode ? 'bg-purple-400' : 'bg-purple-600'
