@@ -59,11 +59,17 @@ const Hero = () => {
   return (
     <section
       id="home"
+      // className={`min-h-screen flex items-center justify-center ${
+      //   darkMode
+      //     ? 'bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900'
+      //     : 'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50'
+      // }`}
       className={`min-h-screen flex items-center justify-center ${
         darkMode
           ? 'bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900'
-          : 'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50'
+          : 'rgb(226,225,224)'
       }`}
+      
     >
       <Container maxWidth="lg">
         <div className="text-center">

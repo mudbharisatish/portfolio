@@ -24,7 +24,7 @@ const Experience = () => {
         'Contributed to CI/CD pipelines using GitLab CI and GitHub Actions, supporting automated builds, linting, and deployments.',
         'Collaborated cross-functionally to define front-end scope in agile sprints, conducted PR reviews, and enforced coding standards.'
       ],
-      technologies: ['React', 'TypeScript', 'Redux', 'Material UI', 'Jest', 'AWS'],
+      technologies: ['React','React-Native','SASS','Docker','Node.js' ,'TypeScript', 'Redux', 'Material UI', 'Jest', 'Azure'],
       achievements: [
         'Reduced application bundle size by 35%',
         'Implemented automated testing increasing coverage to 90%',
@@ -46,7 +46,7 @@ const Experience = () => {
         'Worked closely with QA and product teams to resolve functional and UI bugsacross device matrices.'
      
       ],
-      technologies: ['React', 'Vue.js', 'JavaScript', 'Tailwind CSS', 'Node.js', 'MongoDB'],
+      technologies: ['React', 'Vue.js', 'JavaScript', 'Tailwind CSS', 'Node.js', 'MongoDB','Redux-Saga','Ant-Design','Mapbox'],
       achievements: [
         'Built 15+ responsive web components',
         'Improved user engagement by 25%',
@@ -65,10 +65,10 @@ const Experience = () => {
         'Developed a Vehicle Management System using React + TypeScript, implementing modular components and clean state management via React Query.',
         'Integrated third-party APIs (Google Maps, SMS, Payment) and ensured performance KPIs through real-time monitoring.',
         'Led team stand-ups and mentored junior interns on Git workflows and reusable UI design patterns.',
-        // 'Optimized websites for SEO and performance',
-        // 'Provided technical support to clients'
+        'Optimized websites for SEO and performance',
+        'Provided technical support to clients'
       ],
-      technologies: ['HTML', 'CSS', 'JavaScript', 'WordPress', 'PHP', 'MySQL'],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'WordPress','Shopify', 'Bootstrap','TypeScript','Formik'],
       achievements: [
         'Successfully delivered 20+ client projects',
         'Achieved 98% client satisfaction rate',

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Typography, Card, CardContent, Avatar } from '@mui/material';
 import { useTheme } from './ThemeContext';
 import { motion } from 'framer-motion';
-import abooutme from '../assets/images/aboutme.jpeg'
+import abooutme from '../assets/images/aboutme2.jpeg'
 
 const About = () => {
   const { darkMode } = useTheme();

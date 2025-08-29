@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Typography, Button, IconButton, Drawer, List, ListItem
 import { Menu as MenuIcon } from '@mui/icons-material';
 import { useTheme } from './ThemeContext';
 import { motion } from 'framer-motion';
+import logo from '../assets/images/logo.png'
 
 const Navigation = () => {
   const { darkMode } = useTheme();
@@ -28,17 +29,31 @@ const Navigation = () => {
 
   return (
     <>
+    <div className="container">
       <AppBar
         position="fixed"
         sx={{
-          backgroundColor: darkMode ? 'rgba(18, 18, 18, 0.9)' : 'rgba(255, 255, 255, 0.9)',
+          backgroundColor: darkMode ? 'rgba(18, 18, 18, 0.9)' : 'rgb(226,225,224)',
           backdropFilter: 'blur(10px)',
           boxShadow: darkMode ? '0 2px 10px rgba(255, 255, 255, 0.1)' : '0 2px 10px rgba(0, 0, 0, 0.1)',
         }}
+        
       >
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: darkMode ? 'white' : 'black' }}>
-            Portfolio
+          <Typography   component="div" sx={{ flexGrow: 1, color: darkMode ? 'white' : 'black' }}>
+          <Button
+          style={{objectFit:'cover',marginLeft:'0',padding:'0'}}
+                  onClick={() => scrollToSection(item)}
+                  sx={{
+                    color: darkMode ? 'white' : 'black',
+                    '&:hover': {
+                      backgroundColor: darkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)',
+                    },
+                  }}
+                  
+                >
+            <img src={logo} alt='logo' width={80}/>
+                </Button>
           </Typography>
           
           {/* Desktop Navigation */}
@@ -89,6 +104,7 @@ const Navigation = () => {
       >
         {drawer}
       </Drawer>
+      </div>
     </>
   );
 };
