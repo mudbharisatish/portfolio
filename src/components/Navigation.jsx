@@ -9,7 +9,7 @@ const Navigation = () => {
   const { darkMode } = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const navItems = ['Home', 'About', 'Skills', 'Education', 'Experience', 'Contact'];
+  const navItems = ['Home', 'About', 'Skills', 'Education', 'Experience' ,'Projects', 'Contact'];
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId.toLowerCase());
