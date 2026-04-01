@@ -181,7 +181,7 @@ const Projects = () => {
                       {project.description}
                     </Typography>
                     <div className="flex flex-wrap gap-2 mb-4">
-                      {project.technologies.slice(0, 3).map((tech) => (
+                      {project?.technologies?.slice(0, 3).map((tech) => (
                         <Chip
                           key={tech}
                           label={tech}
@@ -193,7 +193,7 @@ const Projects = () => {
                           }}
                         />
                       ))}
-                      {project.technologies.length > 3 && (
+                      {project?.technologies?.length > 3 && (
                         <Chip
                           label={`+${project.technologies.length - 3}`}
                           size="small"
@@ -205,7 +205,7 @@ const Projects = () => {
                         />
                       )}
                     </div>
-                    <div className="flex gap-2">
+                    {/* <div className="flex gap-2">
                       <Button
                         size="small"
                         startIcon={<GitHub />}
@@ -240,7 +240,7 @@ const Projects = () => {
                       >
                         Demo
                       </Button>
-                    </div>
+                    </div> */}
                   </CardContent>
                 </Card>
               </motion.div>
@@ -326,7 +326,7 @@ const Projects = () => {
                       ))}
                     </div>
                   </div>
-                  <div className="flex gap-4">
+                  {/* <div className="flex gap-4">
                     <Button
                       variant="outlined"
                       startIcon={<GitHub />}
@@ -355,7 +355,7 @@ const Projects = () => {
                     >
                       Live Demo
                     </Button>
-                  </div>
+                  </div> */}
                 </div>
               </>
             )}
