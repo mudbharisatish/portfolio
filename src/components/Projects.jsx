@@ -18,7 +18,7 @@ const Projects = () => {
       description: 'Production-ready LMS with React/Redux frontend and PHP/MySQL backend, featuring custom WordPress marketing site and AI-powered support chatbot.',
       longDescription: 'A full-scale learning management system serving students, instructors, and administrators with seamless, responsive experiences. Built with React and Redux on the frontend connected to RESTful PHP APIs on the backend powered by optimized MySQL schemas. Engineered a custom WordPress marketing site with bespoke themes and reusable component architecture, enabling non-technical users to manage dynamic course catalogs, instructor profiles, pricing tiers, and landing pages. Implemented feature-rich functionality including course CRUD operations, secure authentication, payment processing, real-time progress tracking, discussion forums, and gradebook management. Integrated third-party services (payment gateways, video streaming, email/SMS providers) into clean API endpoints. Set up CI/CD workflows with GitHub Actions for automated build, test, and deployment. Developed an internal AI-powered support chatbot for admin assistance and utilized GitHub Copilot to generate optimized PHP repository methods. Architected reusable React components with Redux state management and designed high-performance MySQL indexes to handle significant read/write traffic while reducing query latency.',
       image: "https://www.shutterstock.com/image-vector/no-photo-blank-image-icon-260nw-1955339317.jpg",
-      technologies: ['React', 'JavaScript', 'PHP', 'MySQL', 'Tailwind'],
+      technologies: ['PHP', 'WordPress', 'React', 'SQL(MySQL)', 'Redux', 'Tailwind', 'CI/CD','Claude'],
       github: '#',
       demo: '#'
     },
@@ -38,7 +38,7 @@ const Projects = () => {
       description: 'Global logistics management platform with automated quote management, freight operations, and comprehensive CRM for freight forwarders.',
       longDescription: 'Impexo is a comprehensive software solution designed for logistics businesses operating globally across air, road, rail, and ocean freight sectors. Built as a fully digital platform, Impexo streamlines complex freight operations by automating quote management, rate negotiations, and job tracking while eliminating reliance on spreadsheets and manual record-keeping. Key features include intelligent freight quote and rate management with automated price comparisons, streamlined operation workflows for sales and operations teams, customer and vendor portals for self-service ordering, integrated customer relationship management (CRM) to classify customers by patterns and behavior, comprehensive financial controls with margin tracking and invoice automation, advanced reporting and analytics dashboards for performance insights, and employee management with granular role-based permissions. The platform enables real-time tracking of shipment data, automated notifications and alerts across multiple channels (email, SMS, mobile app push), contract management capabilities, and organizational performance fact sheets. Deployed with mobile app availability on iOS and Android, Impexo delivers operational simplification for medium to large-scale logistics companies by reducing operational costs, maximizing revenue, and accelerating business growth through digital transformation.',
       image: impexo,
-      technologies: ['React','React-Native','Javascript', 'Redux', 'Bootstrap'],
+      technologies: [ 'React','PHP', 'Wordpress', 'SQL(MySQL)' , 'Shopify', 'Redux','Tailwind', 'CI/CD', 'Docker' ],
       github: '#',
       demo: '#'
     },
@@ -58,7 +58,7 @@ const Projects = () => {
       description: 'On-demand courier, moving, and delivery platform enabling same-day logistics at $1/minute and $1/mile with professional operators.',
       longDescription: 'Yellow Express platform modernizes on-demand logistics for the digital age, building on the company\'s 1926 heritage of reliable courier and moving services. The comprehensive platform enables customers to send, move, and deliver just about anything on-demand with flexible pricing of $1/minute and $1/mile, with express dispatch available in as little as 30 minutes. The platform is built as a responsive, mobile-first application allowing customers to schedule courier services (express courier, same-day delivery, specialty concierge), arrange moving services (studio/1-bedroom, large furniture, any size), and coordinate last-mile logistics for retailers and online marketplace sellers (Facebook Marketplace, eBay, Gumtree pickups, appliance and store deliveries). Key features include real-time booking system with instant dispatch capability, professional operator management with owner-operators ensuring quality service, advanced logistics tracking and status updates, specialty vehicle fleet management with vehicles featuring up to 381 cubic feet cargo space and 4010 lbs payload capacity, comprehensive safety and equipment (moving blankets, dollies, straps, boxes, mattress covers), and customer dashboard for managing shipments. The platform emphasizes reliability, professionalism, and fully-equipped service teams to handle jobs of all sizes. Deployed with mobile app availability and real-time GPS tracking, Yellow Express successfully reconnects the classic moving and courier experience with modern on-demand technology.',
       image:yellowExpress,
-      technologies: ['React', 'JavaScript', 'Redux Saga', 'Tailwind CSS', 'Framer Motion'],
+      technologies: ['React', 'Redux-Saga', 'SASS', 'ANT Design', 'Flutter'],
       github: '#',
       demo: '#'
     },
@@ -68,7 +68,7 @@ const Projects = () => {
       description: 'Comprehensive HR Management System with employee database, time tracking, payroll processing, recruitment, performance management, and analytics.',
       longDescription: 'HR-Utility is a full-featured Human Resource Management System (HRMS) designed to streamline all aspects of organizational people management and workforce administration. The platform consolidates core HR functions into a single, integrated solution that empowers HR teams and employees alike. Key modules include a centralized employee database with comprehensive personal, job history, and salary information management; digital employee profiles with secure document storage for contracts, certifications, and credentials; intelligent organizational charts and reporting structure visualization. The attendance and timekeeping system supports manual and biometric clock-in/clock-out tracking, automated timesheet generation, leave and absence management with configurable policies, and intelligent shift scheduling and rostering. Advanced payroll processing automates salary calculations, bonus and deduction management, tax compliance handling, and instant payslip generation with customizable formats. The integrated Applicant Tracking System (ATS) streamlines recruitment with job posting management, candidate pipeline tracking, interview scheduling, feedback collection, and digital onboarding workflows. Performance management features include comprehensive performance reviews and appraisals, goal setting with KPI and OKR alignment, 360-degree feedback mechanisms, and continuous performance tracking. Learning and development capabilities encompass training program management, integrated Learning Management System (LMS), skill tracking and certification management, and personalized career development planning. Robust analytics and reporting provide workforce analytics dashboards, custom report generation, data-driven insights on retention and diversity, and predictive analytics for informed decision-making. Security is paramount with encrypted data storage, role-based access controls, complete audit trails, and compliance record-keeping. Employee engagement features include pulse surveys and feedback tools, internal communication and announcement systems, recognition and rewards programs, and engagement tracking. The platform integrates seamlessly with accounting, ERP, and CRM systems via APIs, supports workflow automation for approvals and notifications, and is cloud-based with full mobile compatibility.',
       image: 'https://www.shutterstock.com/image-vector/no-photo-blank-image-icon-260nw-1955339317.jpg',
-      technologies: ['React', 'JavaScript','React-Query', 'Socket.io', 'Node.js', 'Redis'],
+      technologies: ['React', 'TypeScript', 'Redux', 'React Query'],
       github: '#',
       demo: '#'
     },
@@ -78,7 +78,7 @@ const Projects = () => {
       description: 'Comprehensive vehicle registration and management platform with digital ownership tracking, tax compliance, and government integration.',
       longDescription: 'VRTMS (Vehicle Registration and Transportation Management System) is a comprehensive digital platform designed to streamline vehicle registration, ownership management, and transportation compliance across government and public sectors. The core vehicle registration module enables efficient registration of new vehicles with unique registration numbers, comprehensive storage of vehicle details (make, model, engine number, VIN, color), and automated issuance of digital registration certificates. The owner information management system maintains detailed owner profiles including name, address, and identity proof documentation, supports linking vehicles to owners, and handles complex ownership records for leasing and corporate fleet vehicles. Advanced ownership transfer capabilities record vehicle sales transitions, maintain historical ownership records, generate transfer certificates, and ensure full audit trails for compliance. Taxation and fee management automates road tax calculations, processes registration fees and penalties, and provides integrated online payment options for streamlined transactions. Powerful search and verification functionality enables vehicle lookups by registration number or VIN, provides instant ownership and registration status verification, and supports law enforcement inquiries and public background checks. Intelligent notification and alert systems send automated reminders for tax renewal, MOT inspections, and insurance updates, notify vehicle owners about penalties or expired registrations, and support multi-channel communication via email and SMS. Advanced reporting and analytics generate detailed vehicle registration reports, track trends across vehicle types and registrations, and provide actionable insights for government planning and policy development. Robust security and access control implements role-based permissions for administrators, staff, and public users, enforces data encryption and secure storage, and protects against unauthorized access through multi-layer security. Online services integration provides web portals for vehicle registration and renewal, integrates seamlessly with insurance and MOT databases, and supports full mobile app functionality. Digital document management stores and retrieves digital copies of registration documents, manages ID proofs and insurance certificates, and enables efficient verification workflows. The platform emphasizes scalability, compliance, and user accessibility with cloud-based deployment, mobile-first design, and comprehensive audit logging for regulatory requirements.',
       image: 'https://www.shutterstock.com/image-vector/no-photo-blank-image-icon-260nw-1955339317.jpg',
-      technologies: ['React', 'Redux', 'Bootstrap', 'Java', 'Redis'],
+      technologies: ['React', 'TypeScript', 'Redux', 'React Query'],
       github: '#',
       demo: '#'
     },
@@ -209,6 +209,7 @@ const Projects = () => {
                       <Button
                         size="small"
                         startIcon={<GitHub />}
+                        disabled
                         onClick={(e) => {
                           e.stopPropagation();
                           window.open(project.github, '_blank');
@@ -226,6 +227,7 @@ const Projects = () => {
                       <Button
                         size="small"
                         startIcon={<Launch />}
+                        disabled
                         onClick={(e) => {
                           e.stopPropagation();
                           window.open(project.demo, '_blank');
@@ -266,6 +268,7 @@ const Projects = () => {
                   />
                   <Button
                     onClick={() => setSelectedProject(null)}
+                    
                     sx={{
                       position: 'absolute',
                       top: 16,
@@ -330,6 +333,7 @@ const Projects = () => {
                     <Button
                       variant="outlined"
                       startIcon={<GitHub />}
+                      disabled
                       onClick={() => window.open(selectedProject.github, '_blank')}
                       sx={{
                         color: darkMode ? 'white' : 'black',
@@ -345,6 +349,7 @@ const Projects = () => {
                     <Button
                       variant="contained"
                       startIcon={<Launch />}
+                      disabled
                       onClick={() => window.open(selectedProject.demo, '_blank')}
                       sx={{
                         background: 'linear-gradient(45deg, #6366f1, #8b5cf6)',
