@@ -18,7 +18,7 @@ const Footer = () => {
     <footer className={`py-12 ${
       darkMode ? 'bg-gray-900 border-t border-gray-700' : 'bg-white border-t border-gray-200'
     }`}>
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <div className="text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

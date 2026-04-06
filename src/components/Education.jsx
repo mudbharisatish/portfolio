@@ -45,7 +45,7 @@ const Education = () => {
     <section id="education" className={`py-20 ${
       darkMode ? 'bg-gray-900' : 'bg-white'
     }`}>
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

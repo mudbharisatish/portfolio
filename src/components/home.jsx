@@ -47,7 +47,7 @@ function Home() {
       <Hero />
 
       <section className="section-padding bg-white" ref={sectionRef}>
-        <Container maxWidth="lg">
+        <Container maxWidth="xl">
           <div className="text-center mb-12 animate-on-scroll">
             <Typography variant="h2" component="h2" className="font-bold mb-4">
               What I Do

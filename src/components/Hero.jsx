@@ -3,6 +3,7 @@ import { Container, Typography, Button } from '@mui/material';
 import { ArrowDownward } from '@mui/icons-material';
 import { useTheme } from './ThemeContext';
 import { motion } from 'framer-motion';
+import backgroundImage from '../assets/images/background.jpg';
 
 const Hero = () => {
   const { darkMode } = useTheme();
@@ -15,7 +16,6 @@ const Hero = () => {
   // Roles typewriter
   const roles = [
     'Frontend Developer',
-    'Cyber Security Analyst',
     'Software Engineer',
   ];
   const [roleIndex, setRoleIndex] = useState(0);
@@ -59,19 +59,15 @@ const Hero = () => {
   return (
     <section
       id="home"
-      // className={`min-h-screen flex items-center justify-center ${
-      //   darkMode
-      //     ? 'bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900'
-      //     : 'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50'
-      // }`}
-      className={`min-h-screen flex items-center justify-center ${
-        darkMode
-          ? 'bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900'
-          : 'rgb(226,225,224)'
-      }`}
-      
+      className={`min-h-screen flex items-center justify-center`}
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <div className="text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -80,9 +76,7 @@ const Hero = () => {
           >
             <Typography
               variant="h1"
-              className={`text-5xl md:text-7xl font-bold mb-2 ${
-                darkMode ? 'text-white' : 'text-gray-800'
-              }`}
+              className={`text-5xl md:text-7xl font-bold mb-2 text-white`}
               style={{ minHeight: '120px' }}
             >
               <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
@@ -100,9 +94,7 @@ const Hero = () => {
             {/* Role Typewriter */}
             <Typography
               variant="h4"
-              className={`text-5xl md:text-7xl font-bold mb-2 ${
-                darkMode ? 'text-white' : 'text-gray-800'
-              }`}
+              className={`text-5xl md:text-7xl font-bold mb-2 text-white`}
             >
               {roleText}
               <span
@@ -122,9 +114,7 @@ const Hero = () => {
           >
             <Typography
               variant="h5"
-              className={`mb-8 ${
-                darkMode ? 'text-gray-300' : 'text-gray-600'
-              }`}
+              className={`mb-8 text-white`}
             >
               Hi, I am recently graduate and a software engineer with over 3 years of experience, specializing in Frontend development.
             </Typography>
@@ -141,13 +131,14 @@ const Hero = () => {
               size="large"
               onClick={scrollToAbout}
               sx={{
-                background: 'linear-gradient(45deg, #6366f1, #8b5cf6)',
+                background: '#000000',
                 '&:hover': {
-                  background: 'linear-gradient(45deg, #4f46e5, #7c3aed)',
+                  background: '#333333',
                 },
                 borderRadius: '30px',
                 padding: '12px 30px',
                 marginRight: '16px',
+                boxShadow: '0 8px 24px rgba(0, 0, 0, 0.8)',
               }}
             >
               View My Work
@@ -161,15 +152,13 @@ const Hero = () => {
                   ?.scrollIntoView({ behavior: 'smooth' })
               }
               sx={{
-                color: darkMode ? 'white' : 'black',
-                borderColor: darkMode ? 'white' : 'black',
+                color: 'white',
+                borderColor: 'white',
                 borderRadius: '30px',
                 padding: '12px 30px',
                 '&:hover': {
-                  borderColor: darkMode ? 'white' : 'black',
-                  backgroundColor: darkMode
-                    ? 'rgba(255, 255, 255, 0.1)'
-                    : 'rgba(0, 0, 0, 0.1)',
+                  borderColor: 'white',
+                  backgroundColor: 'rgba(255, 255, 255, 0.15)',
                 },
               }}
             >
@@ -190,9 +179,7 @@ const Hero = () => {
               <ArrowDownward
                 sx={{
                   fontSize: 40,
-                  color: darkMode
-                    ? 'rgba(255, 255, 255, 0.7)'
-                    : 'rgba(0, 0, 0, 0.7)',
+                  color: '#999999',
                   cursor: 'pointer',
                 }}
                 onClick={scrollToAbout}
